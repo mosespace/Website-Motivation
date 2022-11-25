@@ -7,6 +7,7 @@
 
     <!-- This is the style for the header -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.js">
 
     <!-- This is just a font that we'll be using. You can remove lines 12-14 if you don't want to use Poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -37,9 +38,26 @@
                 <li><span><a href="" class="button">Contact</a></span></li>
                 <!-- On the line above, remove the class="button" if you don't want the final
                 element to be a button -->
+                <img src="imgs/moon.png" id="icon">
             </nav>
         </div>
     </header>
     <!-- End of the header --> 
+
+<script>
+
+    var icon = document.getElementById("icon");
+
+icon.onclick = function(){
+    document.body.classList.toggle("dark-theme")
+    if(document.body.classList.contains("dark-theme")){
+        icon.src="imgs/sun.png";
+       } else{ 
+        icon.src="imgs/moon.png";
+       }
+}
+</script>
+
+
 </body>
 </html>
