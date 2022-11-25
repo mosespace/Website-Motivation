@@ -5,9 +5,27 @@
     text-decoration: none;
 }
 
+:root{
+    --primary-color: #f1f1f1;
+    --secondary-color: #101010;
+}
+
+.dark-theme{
+    --primary-color: #000106;
+    --secondary-color: #fff;
+}
+
+#icon{
+    width: 30px;
+    cursor: pointer;
+    padding: 36px;
+}
+
+
 header{
     width: 100vw;
     height: 100px;
+    background-color: var(--primary-color);
     border-bottom: solid 1px rgba(16, 16, 16, 0.1);
     font-family: 'Poppins';
 }
@@ -37,7 +55,7 @@ header .logo div h1{
 }
 
 header .logo div h1:hover{
-    color: #1ab26b;
+    color: var(--primary-color);
 }
 
 header .logo img{
@@ -67,7 +85,7 @@ header nav span {
 }
 
 header nav a{
-    color: #101010;
+    color: var(--secondary-color);
 }
 
 header nav .button{
@@ -79,6 +97,6 @@ header nav .button{
 }
 
 header nav .button:hover{
-    background-color: #040404;
+    background-color: var(--secondary-color);
     zoom: 1.1;
 }
